@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration/Login</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    
+    <header class="header">LogIn</header>
+
+    <div class="add">
+        <div class="add__login">
+            <form action="registration.js" method="post" enctype="multipart/form-data">
+                <div class="add__firstName">
+                    <p >Login: </p>
+                    <input autocomplete="off" id="UserName" class="textInputs" name="userName" tabindex="1" type="text">
+                </div>
+                <div class="add__lastName">
+                    <p>Password: </p>
+                    <input autocomplete="off" id="UserPassword" class="textInputs" name="userLastname" tabindex="2" type="password">
+                </div>
+            </form>
+
+            <div class="add__login-status"></div>
+
+            <div class="add__btns">
+                <button type="submit" class="add__entrance">Log in</button>
+                <button class="add__registration"><a href="http://localhost:5000/auth/registration">Registration</a></button>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/login.js"></script>
+</body>
+</html>

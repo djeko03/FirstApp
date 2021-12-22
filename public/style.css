@@ -1,0 +1,220 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, a:focus {
+    outline: none !important;
+}
+
+html,body{
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+img{vertical-align: top;}
+
+/*/Обнуление*/
+
+body {
+    background-color: rgba(194, 194, 194, 0.404);
+}
+
+
+.btns {
+    display: flex;
+}
+
+.btns__logIn {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(194, 194, 194, 0.404);
+    border: 15px solid white;
+    font-size: 30px;
+    color: white;
+    transition: all .2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.btns__logIn a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.btns__add {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(194, 194, 194, 0.404);
+    border: 15px solid white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    transition: all .2s linear;
+    color: white;
+    cursor: pointer;
+}
+
+.btns__add a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.users__title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+
+
+.person__table {
+    width: 100%;
+    border: 1px solid black;
+    height: 60px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 20%;
+}
+
+
+.person__delete {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(173, 57, 57);
+    color: black;
+    font-size: 20px;
+    border-radius: 7px;
+    margin-left: 15px;
+    transition: all .1s linear;
+    padding-top: 3px;
+    display: none;
+}
+.person__delete:hover {
+    background-color: red;
+}
+
+.person__put {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(173, 57, 57);
+    color: black;
+    font-size: 20px;
+    border-radius: 7px;
+    margin-left: 15px;
+    transition: all .1s linear;
+    padding-top: 3px;
+    background-color: royalblue; 
+    display: none;
+}
+.person__put:hover {
+    background-color: rgb(0, 68, 255);
+}
+.person__put a {
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+button[type="button"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: royalblue; 
+    margin-left: 10px;
+}
+
+
+input[type="text"]:focus {
+    box-shadow: 0 0 0 4px rgba(149, 197, 243, .9);
+}
+
+.search__form {
+    display: flex;
+    align-items: center;
+}
+
+
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.person__attributes {
+    display: flex;
+    border: 1px solid black;
+    height: 40%;
+}
+.person__attributes span {
+    width: 20%;
+    padding-left: 3px;
+    border: 1px solid black;
+}
+
+
+.person__data {
+    cursor: pointer;
+    display: flex;
+}
+.person__data input {
+    width: 20%;
+}
+.person__data input:hover {
+    box-shadow: 0 0 0 2px black;
+}
+
+
+.cabinet {
+    height: 50px;
+    width: 300px;
+    color: white;
+    padding-left: 10px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 7px;
+}

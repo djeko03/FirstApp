@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <main>
+        <div class="cabinet">
+            <p class="cabinet__name">name:</p>
+            <p class="cabinet__lastname">lastname:</p>
+            <p class="cabinet__phone">phone:</p>
+        </div>
+        <div class="btns">
+            <div class="btns__logIn">
+                <a href="http://localhost:5000/auth/login">Log in</a>
+            </div>
+            <div class="btns__add">
+                <a href="http://localhost:5000/api">Add</a>
+            </div>
+
+        </div>
+        <h1 class="users__title">Users</h1>
+
+        <section class="search">
+            <form class="search__form">
+                <input autocomplete="off" id="search" type="text" value="" placeholder="Search..."> 
+                <button id="searchStart" type="button" value=" " title="Начать поиск">V</button>
+          </form>
+        </section>
+
+        <section class="users">
+            
+        </section>
+
+        <section class="usersSearch">
+
+        </section>
+        
+    </main>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

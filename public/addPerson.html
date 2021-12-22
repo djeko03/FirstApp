@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Person</title>
+    <link rel="stylesheet" href="/add.css">
+</head>
+<body>
+
+    <header class="header">Add Person</header>
+
+    <div class="add">
+        <form action="app.js" method="post" enctype="multipart/form-data">
+            <div class="add__firstName">
+                <p>Имя: </p>
+                <input autocomplete="off" id="reUserName" class="textInputs" name="userName" tabindex="1" type="text">
+            </div>
+            <div class="add__lastName">
+                <p>Фамилия: </p>
+                <input autocomplete="off" id="reUserLastName" class="textInputs" name="userLastname" tabindex="2" type="text">
+            </div>
+            <div class="add__tel">
+                <p class="reData__age-text">Телефон: </p> 
+                <input autocomplete="off" id="userPhone" class="textInputs" name="userAge" tabindex="3" type="tel">
+            </div>
+            <div class="add__age">
+                <p class="reData__age-text">Возраст: </p> 
+                <input autocomplete="off" id="userAge" class="textInputs" name="userAge" tabindex="4" type="tel">
+            </div>
+    
+            <div class="add__gender">
+                <p class="reData__isMember-text">Пол: </p>
+                <input checked id="memberTrue" name="member" type="radio">
+                <label class="labelTrue" for="memberTrue"> Мужчина </label>
+    
+                <input id="memberFalse" name="member" type="radio">
+                <label class="labelFalse" for="memberFalse"> Женщина </label>
+            </div> 
+        </form>
+        <button class="add__btn">Отправить</button>
+        <div class="response"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/addPerson.js"></script>
+</body>
+</html>
